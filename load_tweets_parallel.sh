@@ -1,6 +1,6 @@
 #!/bin/sh
 
-files=files='/data/tweets/geoTwitter21-01-01.zip
+files='/data/tweets/geoTwitter21-01-01.zip
 /data/tweets/geoTwitter21-01-02.zip
 /data/tweets/geoTwitter21-01-03.zip
 /data/tweets/geoTwitter21-01-04.zip
@@ -22,4 +22,4 @@ echo '==========================================================================
 echo 'load pg_normalized_batch'
 echo '================================================================================'
 # FIXME: implement this with GNU parallel
-    echo "$files" | time parallel python3 -u load_tweets_batch.py --db=postgresql://postgres:pass@localhost:5439 --inputs $file
+    echo "$files" | time parallel python3 -u load_tweets_batch.py --db=postgresql://postgres:pass@localhost:5438 --inputs $file
