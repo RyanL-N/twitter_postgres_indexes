@@ -428,4 +428,3 @@ if __name__ == '__main__':
                             tweet = json.loads(line)
                             tweets.append(tweet)
                         insert_tweets(connection,tweets,args.batch_size)
-
